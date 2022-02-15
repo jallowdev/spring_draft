@@ -1,0 +1,26 @@
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+#
+## Hibernate ddl auto (create, create-drop, validate, update)
+#spring.jpa.hibernate.ddl-auto = update
+spring:
+  message: YAMEL Hello World !!!!!!
+  days: 145
+  ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_draft?useSSL=false
+    username: root
+    password: diallo0
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+
+server:
+  #port: 2434
+
+restclient:
+  message: Rest client With spring BOOT !!!
+  link:
+    jsonplaceholder: https://jsonplaceholder.typicode.com/photos
